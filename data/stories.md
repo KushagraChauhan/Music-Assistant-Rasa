@@ -1,7 +1,7 @@
 ## search happy
 * greet
   - utter_greet
-* search_result{"type_of:search", "name_of_song:here with me"}
+* search_song{"type_of:search", "name_of_song:here with me"}
   - action_search
 * thanks
   - utter_goodbye
@@ -9,7 +9,7 @@
 ## search sad
 * greet
   - utter_greet
-* search_result{"type_of:search"}
+* search_song{"type_of:search"}
   - utter_ask_name
 * name_song{"here with me"}
   - action_search
@@ -19,7 +19,7 @@
 ## download happy
 * greet
   - utter_greet
-* search_result{"type_of:download", "name_of_song:here with me"}
+* download_song{"type_of:download", "name_of_song:here with me"}
   - action_download
 * thanks
   - utter_goodbye
@@ -27,7 +27,7 @@
 ## download sad
 * greet
   - utter_greet
-* search_result{"type_of:download"}
+* download_song{"type_of:download"}
   - utter_ask_name
 * name_song{"here with me"}
   - action_download
@@ -37,7 +37,7 @@
 ## play happy
 * greet
   - utter_greet
-* search_result{"type_of:play", "name_of_song:here with me"}
+* play_song{"type_of:play", "name_of_song:here with me"}
   - action_play
 * thanks
   - utter_goodbye
@@ -45,7 +45,7 @@
 ## play sad
 * greet
   - utter_greet
-* search_result{"type_of:play"}
+* play_song{"type_of:play"}
   - utter_ask_name
 * name_song{"here with me"}
   - action_play
