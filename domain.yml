@@ -6,34 +6,32 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - search_song
+  - play_song
+  - download_song
+  - name_song
+
+entities:
+  -type_of
+  -name_of_song
 
 actions:
 - utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
 - utter_goodbye
-- utter_iamabot
+- utter_ask_name
+- action_search
+- action_download
+- action_play
 
 templates:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  - text: "Hey! I am an AI assistant, I can search a song, play a song and download a song...."
 
   utter_goodbye:
   - text: "Bye"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_ask_name:
+  - text: "What's the name of the song?"
 
 session_config:
   session_expiration_time: 60
