@@ -6,32 +6,26 @@
 - good evening
 - hey there
 
-##intent:initial_question
-- what can you do for me?
-- how can you  help me?
-- help me
-- what are you?
-
 ##intent:search_song
-- search](search) a song for me
-- can you [search](search) a song for me
-- i would like to [search](search) a song
-- [search](search) [here with me](name_of_song)
-- [search](search) [here with me by Marshmello](name_of_song)
+- [search](type_of) a song for me
+- can you [search](type_of) a song for me
+- i would like to [search](type_of) a song
+- [search](type_of) [here with me](name_of_song)
+- [search](type_of) [here with me by Marshmello](name_of_song)
 
 ##intent:play_song
-- [play](play) a song for me
-- can you [play](play) a song for me
-- i would like to [play](play) a song
-- [play](play) [here with me](name_of_song)
-- [play](play) [here with me by Marshmello](name_of_song)
+- [play](type_of) a song for me
+- can you [play](type_of) a song for me
+- i would like to [play](type_of) a song
+- [play](type_of) [here with me](name_of_song)
+- [play](type_of) [here with me by Marshmello](name_of_song)
 
 ##intent:download_song
-- [download](download) a song for me
-- can you [download](download) a song for me
-- i would like to [download](download) a song
-- [download](download) [here with me](name_of_song)
-- [download](download) [here with me by Marshmello](name_of_song)
+- [download](type_of) a song for me
+- can you [download](type_of) a song for me
+- i would like to [download](type_of) a song
+- [download](type_of) [here with me](name_of_song)
+- [download](type_of) [here with me by Marshmello](name_of_song)
 
 ##intent:name_song
 - the name of song is [Here with me](name_of_song)
