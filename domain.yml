@@ -9,8 +9,8 @@ intents:
   - name_song
 
 entities:
-  -type_of
-  -name_of_song
+  - type_of
+  - name_of_song
 
 slots:
   type_of:

@@ -3,7 +3,8 @@
   - utter_greet
 * search_song{"type_of:search", "name_of_song:here with me"}
   - action_search
-* thanks
+  - slot{"result":"This here"}
+* goodbye
   - utter_goodbye
 
 ## search sad
@@ -13,15 +14,16 @@
   - utter_ask_name
 * name_song{"here with me"}
   - action_search
-* thanks
-- utter_goodbye
+  - slot{"result":"This here"}
+* goodbye
+  - utter_goodbye
 
 ## download happy
 * greet
   - utter_greet
 * download_song{"type_of:download", "name_of_song:here with me"}
   - action_download
-* thanks
+* goodbye
   - utter_goodbye
 
 ## download sad
@@ -31,7 +33,7 @@
   - utter_ask_name
 * name_song{"here with me"}
   - action_download
-* thanks
+* goodbye
   - utter_goodbye
 
 ## play happy
@@ -39,7 +41,7 @@
   - utter_greet
 * play_song{"type_of:play", "name_of_song:here with me"}
   - action_play
-* thanks
+* goodbye
   - utter_goodbye
 
 ## play sad
@@ -49,5 +51,5 @@
   - utter_ask_name
 * name_song{"here with me"}
   - action_play
-* thanks
+* goodbye
   - utter_goodbye
