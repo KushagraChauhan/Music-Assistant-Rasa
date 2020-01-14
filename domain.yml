@@ -3,9 +3,6 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
   - search_song
   - play_song
   - download_song
@@ -15,23 +12,32 @@ entities:
   -type_of
   -name_of_song
 
+slots:
+  type_of:
+    type: text
+  name_of_song:
+    type: text
+  result:
+    type: unfeaturized
+
 actions:
-- utter_greet
-- utter_goodbye
-- utter_ask_name
-- action_search
-- action_download
-- action_play
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_name
+  - action_search
+  - action_download
+  - action_play
 
 templates:
   utter_greet:
-  - text: "Hey! I am an AI assistant, I can search a song, play a song and download a song...."
+    - text: "Hey! I am an AI assistant, I can search a song, play a
+             song and download a song...."
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
 
   utter_ask_name:
-  - text: "What's the name of the song?"
+    - text: "What's the name of the song?"
 
 session_config:
   session_expiration_time: 60
