@@ -1,16 +1,8 @@
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
   - search_song
   - play_song
-  - download_song
-  - name_song
-
-entities:
-  - type_of
-  - name_of_song
 
 slots:
   type_of:
@@ -20,24 +12,33 @@ slots:
   result:
     type: unfeaturized
 
+forms:
+  - form_get_name
+
+
 actions:
   - utter_greet
-  - utter_goodbye
+  - utter_menu
   - utter_ask_name
-  - action_search
-  - action_download
-  - action_play
+  - utter_goodbye
 
 templates:
   utter_greet:
-    - text: "Hey! I am an AI assistant, I can search a song, play a
-             song and download a song...."
+    - text: "Hey! I am an AI assistant...."
+  utter_menu:
+    - text: "Choose one of the following:"
+      buttons:
+        - title: "search a song"
+          payload: "/search_song"
+        - title: "play a song"
+          payload: "/play_song"
+  utter_ask_name:
+    - text: "What's the name of the song?"
+      payload: "name_song"
 
   utter_goodbye:
     - text: "Bye"
 
-  utter_ask_name:
-    - text: "What's the name of the song?"
 
 session_config:
   session_expiration_time: 60
