@@ -1,55 +1,23 @@
-## search happy
+## search
 * greet
   - utter_greet
-* search_song{"type_of:search", "name_of_song:here with me"}
-  - action_search
-  - slot{"result":"This here"}
-* goodbye
-  - utter_goodbye
-
-## search sad
-* greet
-  - utter_greet
-* search_song{"type_of:search"}
+  - utter_menu
+* search_song
+  - utter_thanks
   - utter_ask_name
-* name_song{"here with me"}
-  - action_search
-  - slot{"result":"This here"}
+  - form_get_name
+  - form{"name": "form_get_name"}
 * goodbye
   - utter_goodbye
 
-## download happy
+## play
 * greet
   - utter_greet
-* download_song{"type_of:download", "name_of_song:here with me"}
-  - action_download
-* goodbye
-  - utter_goodbye
-
-## download sad
-* greet
-  - utter_greet
-* download_song{"type_of:download"}
+  - utter_menu
+* play_song
+  - utter_thanks
   - utter_ask_name
-* name_song{"here with me"}
-  - action_download
-* goodbye
-  - utter_goodbye
-
-## play happy
-* greet
-  - utter_greet
-* play_song{"type_of:play", "name_of_song:here with me"}
-  - action_play
-* goodbye
-  - utter_goodbye
-
-## play sad
-* greet
-  - utter_greet
-* play_song{"type_of:play"}
-  - utter_ask_name
-* name_song{"here with me"}
-  - action_play
+  - form_get_name
+  - form{"name": "form_get_name"}
 * goodbye
   - utter_goodbye
